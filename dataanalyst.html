@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>Data Analyst</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="home.css" rel="stylesheet" type="text/css" />
+
+<style>
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+margin-right: 40;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 12%;
+border-radius: 12px;
+float: right;
+}
+.button:hover {
+  background-color: green;
+}
+input[type=submit] {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+margin-right: 40;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 22%;
+border-radius: 12px;
+float: center;
+}
+
+input[type=submit]:hover {
+  background-color: green;
+}
+
+input[type="file"]::file-selector-button {
+  border: 2px solid black;
+   padding: 5px;
+  border-radius: 12px;
+  background-color: #FF8C00;
+cursor:pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: green;
+}
+
+input[type=text],back {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+button {
+float:right;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+margin-right: 40;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 10%;
+border-radius: 12px;
+float: center;
+}
+</style>
+</head>
+<body>
+<div id="header">
+  <table width="200" align="center">
+    <tr>
+      <td height="212"><img src="dataanalyst.png"  width="400" height="200" /></td>
+    </tr>
+  </table>
+</div>
+<div style="text-align:center;">
+<h2 style="font-size:30px; text-shadow:2px 2px 5px #808080;font-style:italic;">Data Analyst</h2>
+</div>
+<div class="description">
+<div class="childDiv">
+<h2>Job Summary</h2>
+
+<p><b><i>&nbsp; Job Location : </b></i>Chennai</p>
+<p><b><i>&nbsp; Vacancies : </b></i>18</p>
+<p><b><i>&nbsp; Experience : </b></i>2-3 years</p>
+<p><b><i>&nbsp; Category : </b></i>Part Time</p>
+
+
+</div>
+<h2 style="padding: 40px 40px;"><i>Job Description</i></h2>
+<p style="padding: 0px 40px;">
+We are looking to hire a Data Analyst for a part-time remote role.The candidate should be able to work 
+<br>with online tools.
+To analyse Data and prepare reports with MS-Excel.
+Take decisions based on the Hourly/Alarm 
+<br>reports.</p>
+
+<h2 style="padding: 40px 40px;"><i>Educational Qualification</i></h2>
+<p style="padding: 0px 40px;"><ul>
+<li><b>&nbsp; UG / PG Percentage: </b> 70 % and above</li>
+<li><b>&nbsp; Backlogs : </b>No history of backlogs</li>
+<li><b>&nbsp; Programming Languages : </b>Java or any other one programming language</li>
+</p>
+
+<h2 style="padding: 40px 40px;"><i>Skills Required</i></h2>
+<p style="padding: 0px 40px;"><ul><li>Any Diploma/Graduates with Good experience in MS-Excel</li><br>
+<li>Fluent in English written communication.</li><br>
+<li>Familiarity with Desktop Computing: Windows PC’s, Outlook Email, Web Browsers and the Internet.</li><br>
+<li>Good comprehension skills -- ability to clearly understand and relate to the issues customers raise.</li><br>
+<li>Effective problem-solving skills.</li><br>
+<li>Ability to approach problems logically. Ability to demonstrate learning and decision-making skills.</li>
+</ul></p>
+
+<button onclick="history.back()" type="back">Back</button>
+
+<div class="formDiv">
+<h2 style="font-size:30px;text-align:center;text-shadow: 2px 2px 3px #808080;color:#FF8C00;"><i>Apply For The Job</i></h2>
+<div>
+  <form action="thankyou.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your First Name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+
+<label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your Email">
+
+<label for="mobile">Telephone</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Your Mobile Number">
+
+<label for="job">You have selected for</label>
+    <input type="text" id="job" name="job" placeholder="Data Analyst" disabled>
+
+<label for="type">Job Type</label>
+    <input type="text" id="type" name="type" placeholder="Part-Time" disabled>
+
+<label for="experience">Experience</label>
+    <input type="text" id="experience" name="experience" placeholder="Enter zero if not applicable">
+  
+<label for="fileUpload">Upload Your Resume</label>
+  <input type="file" id="fileUpload" /><br><br>
+
+    <input type="submit" value="Submit Application">
+</form>
+</div>
+
+
+</div>
+</body>
+</html>

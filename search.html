@@ -1,0 +1,76 @@
+<?php include 'connect.php'?>
+<html>
+<head>
+<title>Job Catagory</title>
+<link href="home.css" rel="stylesheet" type="text/css" />
+<link href="home1.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 100px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 72%;
+border-radius: 12px;
+}
+
+.button:hover {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+ <div class="container">
+    <div class="topnav">
+		<a href="home.html"><i class="fa fa-fw fa-home"></i> Home </a>
+
+		 <a href="about.html"><i class="fa fa-star"></i> About Us </a>
+
+		 <a href="search.html"><i class="fa fa-search"></i>  Apply for Job  </a>	
+               
+                 <a href="admin.html"><i class="fa fa-user-circle"></i> Administration Login</a>
+
+                 <a href="help.html"><i class="fa fa-question-circle" style="font-size:22px;color:red"></i> Help </a>
+       	
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2 style="font-size:30px;text-shadow:3px 3px 7px white;">Full Time Jobs</h2>
+    <p style="font-weight:bold;color:white;">Search for full time jobs</p>
+    <img src="full-time.jpg" width=350 height=250>
+ <p><button class="button" onclick="location.href='full-time.html'"><i class="fa fa-search"></i> SEARCH   </button></p>
+
+  </div>
+<div class="column" style="background-color:#bbb;">
+    <h2 style="font-size:30px;text-shadow:3px 3px 7px white;">Part Time Jobs</h2>
+    <p style="font-weight:bold;color:white;">Search for part-time jobs</p>
+    <img src="part-time.jpeg" height=268 width=350>
+    <p><button class="button" onclick="location.href='parttime.html'"><i class="fa fa-search"></i> SEARCH   </button></p>
+</div>
+
+</div>
+</div>
+  </div>
+</body>
+</html>
